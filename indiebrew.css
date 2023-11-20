@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: rgb(235,200,235);
+    background: linear-gradient(139deg, rgba(235,200,235,1) 0%, rgba(237,224,237,1) 10%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    color: rgb(95, 95, 95);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .list {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.list a{
+    text-decoration: none;
+}
+
+.list a{
+    color: black;
+}
+
+.button {
+    background: blue;
+    color: aliceblue;
+    border: none;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.navlist input, .togglemenu {
+    display: none;
+}
+
+#togglemenu:checked ~ .list {
+    display: block;
+
+}
+
+
+
+.firstpart {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.firstpart_1 {
+    width: 50%;
+    padding-top: 90px;
+}
+
+.firstpart_1 h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.firstpart_1 p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 10px 0
+}
+
+.firstpart_1 a {
+    text-decoration: none;
+}
+
+.firstpart_1 .button{
+    display: block;
+}
+
+.blue {
+    color: blue;
+}
+
+.firstpart_1 img{
+    display: block;
+    width: 42%;
+    padding-top: 15px;
+
+} 
+
+.firstpart_2 {
+    width: 50%;
+}
+
+.firstpart_2 img {
+    width: 100%;
+}
+
+.secondpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondpart_1 {
+    width: 50%;
+    flex-grow: 2;
+}
+
+.secondpart_1 h2 {
+    font-size: 1.7rem;
+}
+
+.secondpart_1 p{
+    font-size: 0.9rem;
+    padding: 10px 0
+}
+
+.secondpart_1 a {
+    text-decoration: none;
+}
+
+.secondpart_2 {
+    width: 50%;
+    text-align: right;
+    flex-grow: 1;
+}
+
+.secondpart_2 img {
+    width: 90%;
+}
+.thirdpart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdpart_1 {
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    flex-grow: 1;
+}
+
+.thirdpart_1 img {
+    width: 100%;
+}
+.thirdpart_2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.thirdpart_2 h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.thirdpart_2 p {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+.thirdpart_2 a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_1 {
+    width: 40%
+}
+
+.footer_1 p {
+    font-size: 0.9rem;
+    padding: 10px 0
+}
+
+
+.footer_2 {
+    display: flex;
+    width: 53%;
+    justify-content: space-between;
+}
+
+.footer_2 ul {
+    list-style: none;
+}
+
+.footer_list li:first-child {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.footer_list li:not(:first-child){
+    padding-bottom: 10px;
+    color: rgb(95, 95, 95);
+}
+
+@media screen and (max-width: 928px) {
+    .firstpart {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .firstpart_1, .firstpart_2 {
+        width: 100%
+    }
+
+    .firstpart_2 img {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .firstpart_1 {
+        padding-top: 65px;
+    }
+
+    .firstpart_1 h1{
+        font-size: 3rem;
+    }
+    
+    .firstpart_1 img{
+        width: 30%;
+    }
+
+    .secondpart_1{
+        width: 60%;
+    }
+
+    .secondpart_1 h2{
+        font-size: 1.3rem;
+    }
+
+    .thirdpart_2 {
+        width: 70%;
+    }
+
+    .thirdpart_1 {
+        width: 30%;
+    }
+
+    .thirdpart_2 h2 {
+        font-size: 1.7rem;
+    }
+
+    .footer_2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* Sign up Tablet View  */
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .record, .form {
+        min-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .navlist .list {
+        display: none;
+    }
+
+    .togglemenu {
+        display: block;
+    }
+   
+    .navlist {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        background: rgba(245, 245, 245, 0.918);
+    }
+
+    .navlist li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 2px solid  rgb(192, 98, 192);
+      padding: 5px;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .firstpart {
+        padding-bottom: 110px;
+    }
+
+    .firstpart_2 img {
+        width: 100%;
+    }
+
+    .firstpart_1 h1 {
+        font-size: 4rem;
+    }
+
+    .firstpart_1 p {
+        font-size: 1.3rem
+    }
+
+    .firstpart_1 .button {
+        font-size: 1.5rem;
+        padding: 20px 30px;
+        min-width: fit-content;
+    }
+    .firstpart_1 img {
+        width: 68%;
+    }
+
+    .secondpart {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 30px;
+    }
+
+    .secondpart_2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .secondpart_2 img{
+        min-width: 100%;
+    }
+
+    .secondpart_1 {
+        min-width: 100%;
+    }
+
+    .secondpart_1 h2 {
+        font-size: 1.8rem;
+    }
+
+    .secondpart_1 p {
+        font-size: 1rem;
+    }
+
+    .thirdpart {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thirdpart_1 {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .thirdpart_2 {
+        width: 100%;
+    }
+
+    .thirdpart_2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .thirdpart_2 p {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .footer_1 {
+        min-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .footer_1 p {
+        line-height: 1.5rem;
+    }
+
+    .footer_2 {
+        min-width: 100%;
+        gap: 50px  40%;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .back p {
+        display: none;
+    }
+}
+
+
+/* Sign up Page */
+
+.body {
+    height: 100%vh;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back img {
+    background-color: rgba(255, 255, 255, 0.668);
+    padding: 8px 11px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back p {
+    font-weight: bold;
+    color: black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.record {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.record h1 {
+    font-size: 2rem;
+}
+
+.record ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+.record li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+li p {
+    color: black;
+}
+
+.li1::before {
+    content: '🎈';
+}
+
+.li2::before {
+    content: '💸';
+}
+
+.li3::before {
+    content: '💡';
+}
+
+
+.form {
+    background-color: white;
+    width: 50%;
+    padding: 2.6rem;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+form p {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.4rem
+}
+
+form label {
+    font-weight: bold;
+    color: black;
+}
+
+form p:nth-child(5){
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.input {
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
